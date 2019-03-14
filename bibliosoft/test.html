@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>图片的显示</title>
+    <style type="text/css">
+        <!--
+        #bg1 {
+            position:absolute;
+            width:162px;
+            height:115px;
+            z-index:1;
+        }
+        #bg2 {
+            position:absolute;
+            width:162px;
+            height:115px;
+            z-index:1;
+            left: 1px;
+            top: 1px;
+            display:none;
+        }
+        #b1 {
+            position:absolute;
+            width:22px;
+            height:21px;
+            z-index:2;
+            left: 60px;
+            top: 201px;
+        }
+        #b2 {
+            position:absolute;
+            width:22px;
+            height:24px;
+            z-index:3;
+            left: 84px;
+            top: 203px;
+        }
+        -->
+    </style>
+    <script>
+        function showbg1(){
+            document.getElementById("bg1").style.display="block";
+            document.getElementById("bg2").style.display="none";
+
+        }
+        function showbg2(){
+            document.getElementById("bg1").style.display="block";
+            document.getElementById("bg2").style.display="block";
+        }
+    </script>
+</head>
+
+<body>
+<div id="bg1"><img src="img/bg1.jpg" width="500" height="500" />
+    <div id="bg2"><img src="img/background2.jpeg" width="500" height="500" /></div>
+</div>
+
+<p> </p>
+<div id="b1" onmousemove="showbg1()"><img src="img/p1.jpg" width="22" height="20" /></div>
+<div id="b2" onmousemove="showbg2()"><img src="img/bg.jpg" width="18" height="19" /></div>
+</body>
+</html>
